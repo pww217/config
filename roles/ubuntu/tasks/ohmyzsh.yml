@@ -1,8 +1,6 @@
 ---
 - name: shell | Install oh-my-zsh
-  tags:
-    - ohmyzsh
-  ansible.builtin.shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   args:
     creates: "~/.oh-my-zsh"
 
