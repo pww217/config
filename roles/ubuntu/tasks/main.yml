@@ -16,6 +16,10 @@
   tags:
     - always
 
+- name: include_vars | Include username based vars
+  ansible.builtin.include_vars:
+    file: "uservars/{{ ansible_user_id }}.yml"
+
 # Optional software roles
 - include_tasks: ohmyzsh.yml
   when: ohmyzsh | bool
