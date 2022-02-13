@@ -43,7 +43,7 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
     owner: "{{ item.owner|d(ansible_user_id) }}"
-    group: "{{ item.group|d('pwilson') }}"
+    group: "{{ item.group|d('1000') }}"
     mode: "{{ item.mode|d('0640') }}"
   loop: "{{ user_file_list }}"
   when: user_file_list is defined
@@ -53,7 +53,7 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
     owner: "{{ item.owner|d(ansible_user_id) }}"
-    group: "{{ item.group|d('pwilson') }}"
+    group: "{{ item.group|d('1000') }}"
     mode: "{{ item.mode|d('0640') }}"
   loop: "{{ user_template_list }}"
   when: user_template_list is defined
