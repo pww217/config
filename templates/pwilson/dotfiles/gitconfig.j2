@@ -1,0 +1,40 @@
+# This is Git's per-user configuration file.
+
+[user]
+	name = pww217
+	email = pwilson@anaconda.com
+
+[alias]
+	br = branch
+  brd = branch -D
+	cm = "commit -m"
+	st = status
+	co = checkout
+  push = push -u origin HEAD
+	unstage = reset HEAD --
+	ls = log --oneline --graph --decorate
+  remote = remote -v
+
+[pull]
+	rebase = false
+
+[core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+  excludesfile = ~/.gitignore
+
+[color]
+  ui = true
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[color "diff"]
+  meta = 11
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse

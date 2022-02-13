@@ -1,0 +1,19 @@
+---
+# Base customization
+
+ohmyzsh: "true"
+p10k: "true"
+k8s: "true"
+terraform: "true"
+
+# Advanced customization
+
+user_dir_list:
+  - path: "~/repos"
+user_file_list:
+  - src: "{{ ansible_user_id }}/vscode/settings.json"
+    dest: "~/Library/Application Support/Code/User/settings.json"
+    mode: "0640"
+user_template_list:
+  - src: "{{ ansible_user_id }}/dotfiles/gitconfig.j2"
+    dest: "~/.gitconfig"

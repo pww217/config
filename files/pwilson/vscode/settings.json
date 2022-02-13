@@ -1,0 +1,10 @@
+{
+  "window.zoomLevel": 2,
+  "gitlens.defaultDateFormat": null,
+  "redhat.telemetry.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false
+}
