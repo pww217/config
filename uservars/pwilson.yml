@@ -9,5 +9,5 @@ terraform: "false"
 # Advanced customization
 
 user_template_list:
-  - src: "{{ ansible_user_id }}/dotfiles/gitconfig.j2"
+  - src: "templates/{{ ansible_user_id }}/dotfiles/gitconfig.j2"
     dest: "~/.gitconfig"
